@@ -1,1 +1,0 @@
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAXr5SetdcFVqc8+KFVd7c1Gu/2s3nRA3gHNb5GhOcDp andrea.bruni1992gmail.com
