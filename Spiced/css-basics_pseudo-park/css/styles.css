@@ -21,7 +21,6 @@
 }
 
 .croc {
-  padding: 16px;
   font-size: 32px;
   /*
     The animals are very small.
@@ -30,7 +29,7 @@
   */
 }
 
-.gira{
+.gira {
   text-align: center;
   font-size: 2rem;
 }
@@ -40,7 +39,7 @@
    - align the dino to the right
   💡 Select the animals by their class name and use the text align property.
 */
-.dino{
+.dino {
   text-align: right;
   font-size: 2rem;
 }
@@ -53,8 +52,14 @@
 
   💡 You'll need to use a pseudo class selector for each animal.
 */
-.croc:hover{
+.croc:hover {
   background-color: lightblue;
 }
 
-.
+.gira:hover {
+  background-color: lightgreen;
+}
+
+.dino:hover {
+  background-color: lightsalmon;
+}
