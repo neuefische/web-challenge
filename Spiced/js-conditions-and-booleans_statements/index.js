@@ -14,10 +14,10 @@ if (receivedPassword !== SUPER_SECRET_PASSWORD) {
 // Part 2: Even / Odd
 const number = 6;
 
-if ((number !== 2, 4, 6, 8, 10)) {
-  console.log("Odd");
-} else {
+if (number % 2 == 0) {
   console.log("even");
+} else {
+  console.log("odd");
 } // not sure I've understood
 
 // Part 3: Hotdogs
