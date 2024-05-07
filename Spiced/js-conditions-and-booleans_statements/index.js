@@ -52,8 +52,3 @@ const greeting =
   userName === coachName ? "Hello Coach!" : "Hello " + userName + "!";
 
 console.log(greeting);
-
-let message =
-  receivedPassword === SUPER_SECRET_PASSWORD
-    ? "Welcome! You are logged in as Brunhilde1984."
-    : "Acces denied!";
