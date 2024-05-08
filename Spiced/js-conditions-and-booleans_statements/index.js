@@ -1,14 +1,14 @@
 console.clear();
 
 // Part 1: Password
-const SUPER_SECRET_PASSWORD = "h4x0r1337";
+const SUPER_SECRET_PASSWORD = "Hello.Java1";
 
-const receivedPassword = "password1234";
+const receivedPassword = "Hello.Java1";
 
 if (receivedPassword !== SUPER_SECRET_PASSWORD) {
   console.log("Access denied!");
 } else {
-  console.log("Welcome! You are logged in as Brunhilde1984.");
+  console.log("Welcome! You are logged in as ndrbn0.");
 }
 
 // Part 2: Even / Odd
