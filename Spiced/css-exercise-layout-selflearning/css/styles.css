@@ -42,7 +42,7 @@ h3 {
   background-color: rgb(2, 62, 127);
   color: white;
   border-radius: 5px;
-  width: 105%;
+  width: 100%;
   flex: 50%;
 }
 
@@ -50,7 +50,7 @@ h3 {
   background-color: lightseagreen;
   color: white;
   border-radius: 5px;
-  width: 105%;
+  width: 100%;
   flex: 25%;
 }
 
@@ -58,7 +58,7 @@ h3 {
   background-color: lightseagreen;
   color: white;
   border-radius: 5px;
-  width: 105%;
+  width: 100%;
   flex: 25%;
 }
 
