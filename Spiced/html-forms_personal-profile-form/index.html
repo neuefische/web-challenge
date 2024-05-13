@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <fieldset>
+      <h1>My Personal Profile</h1>
+      <section>
+        <p>I'm Andrea B., 31 yo and from Italy. 🍝</p>
+        <fieldset>
+          <legend>Personal Info</legend>
+          First Name:
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            value="First Name"
+          />
+          Last Name:
+          <input type="text" name="lastName" id="lastName" value="Last Name" />
+          Birthday:
+          <input type="date" name="birthday" id="birthday" />
+        </fieldset>
+        <p>
+          I'm studying development for the first time and playing around with
+          HTML 👨🏻‍💻
+        </p>
+        <fieldset>
+          <legend>Further Info</legend>
+          Favourite Color:
+          <input for="color" type="color" name="favColor" id="favColor" />
+          and your favourite Pet?
+          <label for="pet"></label>
+
+          <select id="pet" value="Please choose an option">
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="bird">Bird</option>
+            <option value="goldfish">Gold Fish</option>
+          </select>
+        </fieldset>
+      </section>
+
+      <input type="submit" value="Submit" />
+    </fieldset>
+  </body>
+</html>
