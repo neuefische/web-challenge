@@ -85,7 +85,7 @@ const divideByTwoButton = document.querySelector('[data-js="divide-by-two"]');
 increaseByOneButton.addEventListener("click", () => {
   // 7. Increase the value of "operand1" by 1. Log the new value to the console.
 });
-const addByOne = operand1 +1;
+const addByOne = operand1 + 1;
 console.log("+1:", addByOne);
 
 increaseByFiveButton.addEventListener("click", () => {
