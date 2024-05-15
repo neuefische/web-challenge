@@ -1,0 +1,60 @@
+:root {
+  --body-bg: #ffebcd;
+
+  --main-bg: #ffebcd;
+  --main-text: #fff;
+  --main-title-bg: #663399;
+
+  --header-bg: #ffd700;
+  --header-text: #663399;
+
+  --card-bg: #228b22;
+  --card-text: #fff;
+}
+
+#insight {
+  text-align: center;
+  margin: ;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  padding: 15px;
+}
+
+main {
+  background-color: var(--main-bg);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#menu {
+  color: var(--main-text-color);
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+section {
+  border: 2px solid var(--card-border-color);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+h3 {
+  color: var(--card-heading-color);
+}
+
+p {
+  color: var(--card-paragraph-color);
+}
+
+h4 {
+  color: var(--card-subheading-color);
+  margin-top: 10px;
+}
