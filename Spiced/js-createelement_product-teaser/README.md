@@ -1,12 +1,12 @@
-# toast-messages
+# product-teaser
 
 ## Task
 
-In the bottom right corner you can find a toast messages container with one entry.
+This exercise includes an example of a product teaser for an online shop. Please append a second product teaser to the page with JavaScript based on the data given in the `index.js` file.
 
-When clicking the "Add toast message" button a new entry should be appended to the toast messages container. Create the HTML element for a new toast message with `document.createElement()`. Have a look at the `index.html` to see the required HTML tag and class name.
+Use `.innerHTML` to generate the HTML elements for the teaser. Use string interpolation to include the given data into the HTML.
 
-When clicking the "Clear all toast messages" button, the list of toast messages should be emptied. Afterwards you should still be able to add new toast messages and clear them again.
+Add an event listener to the "buy" button of the second product teaser. When clicking the button, the product's name and price should be logged to the console.
 
 ## Notes
 
