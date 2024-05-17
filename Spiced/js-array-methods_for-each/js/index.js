@@ -1,3 +1,5 @@
+const colorContainer = document.getElementsByClassName(".color-box");
+
 const colors = [
   "#343434",
   "#7FB5B5",
@@ -19,4 +21,21 @@ const colors = [
   "#A5A5A5",
 ];
 
-colors.forEach();
+/* 
+colors.forEach((color) => {
+  const colorBox = document.createElement("div");
+  colorBox.classList.add("color-box");
+  colorBox.style.backgroundColor = color;
+
+  document.body.append(colorBox);
+}); */
+
+function renderColorBox(color) {
+  const colorBox = document.createElement("div");
+  colorBox.classList.add("color-box");
+  colorBox.style.backgroundColor = color;
+
+  document.body.append(colorBox);
+}
+
+colors.forEach(renderColorBox);
