@@ -34,6 +34,8 @@ const EXAMPLE_DATA = {
 };
 
 // Create dom element for a card and append it to the root
+const firstCard = Card(EXAMPLE_DATA);
+renderElement(firstCard);
 
 // --v-- your code below this line --v--
 const url = "https://swapi.py4e.com/api/people";
@@ -50,7 +52,4 @@ async function fetchDataAndRender() {
   });
 }
 
-const firstCard = Card(EXAMPLE_DATA);
-renderElement(firstCard);
-
-fetchDataAndRender();
+fetchDataAndRender(); // ?
