@@ -39,9 +39,11 @@ const onlyTitles = recipes.map((recipe) => recipe.title);
 console.log(onlyTitles);
 // ['Crepes', ...]
 
-const titlesWithDuration = recipes.map(
-  (recipe) => recipe.title === "Crepes" && recipe.duration === 60
-);
+const titlesWithDuration =
+  /* recipes.map(
+  (recipe) => recipe.title === "Crepes" && recipe.duration === 60); */
+  recipes.map((recipe) => `${recipe.title} (${recipe.duration}min)`);
+
 console.log(titlesWithDuration); // ['Crepes (60min)', ...]
 
 const timePerServing = recipes.map((recipe) => recipe.duration);
