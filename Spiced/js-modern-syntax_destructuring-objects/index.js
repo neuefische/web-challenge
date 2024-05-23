@@ -11,6 +11,7 @@ const company = {
 };
 
 const { name: courseName } = company;
+export { courseName };
 console.log(courseName);
 
 // example: export const {value1} = myObject;
