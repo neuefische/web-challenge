@@ -5,5 +5,71 @@
 }
 
 body {
-  list-style: none;
+  background-color: #20104a; /* Dark Blue */
+  color: #ecf0f1; /* Light Grey */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Header */
+h1 {
+  color: #f1c40f; /* Yellow */
+  margin-bottom: 20px;
+}
+
+/* People in Space Number */
+[data-js="people-in-space"] {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* People List */
+[data-js="people-list"] {
+  list-style-type: none;
+  padding: 0;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+[data-js="people-list"] li {
+  background-color: #34495e; /* Greyish Blue */
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Filter Buttons */
+button {
+  background-color: #f1c40f; /* Yellow */
+  color: #2c3e50; /* Dark Blue */
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #f39c12; /* Darker Yellow */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 10px #f1c40f;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 10px;
+  color: #95a5a6; /* Light Grey */
 }
