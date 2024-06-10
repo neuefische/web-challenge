@@ -6,7 +6,7 @@ export default function Volumes() {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>testing</title>
       </Head>
       <h1>The Lord of the Rings</h1>
       <p>{introduction}</p>

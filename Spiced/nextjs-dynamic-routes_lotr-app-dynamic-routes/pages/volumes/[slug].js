@@ -1,35 +1,67 @@
+import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { introduction, volumes } from "../../lib/data";
-import Head from "next/head";
+import { volumes } from "../../lib/data.js";
+import { useRouter } from "next/router.js";
+import Head from "next/head.js";
 
 function getRandomElement(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
-export default function Volumes() {
+export default function VolumeDetail() {
   const router = useRouter();
+  const { slug } = router.query;
 
-  const handleRandomVolume = () => {
-    const randomVolume = getRandomElement(volumes);
-    router.push(`/volumes/${randomVolume.slug}`);
-  };
+  if (!router.isReady) {
+    return null;
+  }
 
+  const volumeIndex = volumes.findIndex((volume) => volume.slug === slug);
+
+  const volume = volumes[volumeIndex];
+  const nextVolume = volumes[volumeIndex + 1];
+  const previousVolume = volumes[volumeIndex - 1];
+
+  if (!volume) {
+    return null;
+  }
+
+  const { title, description, cover, books } = volume;
   return (
     <>
       <Head>
         <title>{title}</title>
       </Head>
-      <h1>The Lord of the Rings</h1>
-      <p>{introduction}</p>
+      <Link href="/volumes">← All Volumes</Link>
+      <h1>{title}</h1>
+      <p>{description}</p>
       <ul>
-        {volumes.map((volume) => (
-          <li key={volume.slug}>
-            <Link href={`/volumes/${volume.slug}`}>{volume.title}</Link>
+        {books.map(({ ordinal, title }) => (
+          <li key={title}>
+            {ordinal}: <strong>{title}</strong>
           </li>
         ))}
       </ul>
-      <button onClick={handleRandomVolume}>Go to a Random Volume</button>
+      <Image
+        src={cover}
+        alt={`Cover image of ${title}`}
+        width={140}
+        height={230}
+      />
+      {previousVolume ? (
+        <div>
+          <Link href={`/volumes/${previousVolume.slug}`}>
+            ← Previous Volume: {previousVolume.title}
+          </Link>
+        </div>
+      ) : null}
+      {nextVolume ? (
+        <div>
+          <Link href={`/volumes/${nextVolume.slug}`}>
+            Next Volume: {nextVolume.title} →
+          </Link>
+        </div>
+      ) : null}
     </>
   );
 }
