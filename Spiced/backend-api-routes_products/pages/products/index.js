@@ -10,19 +10,17 @@ export default function ProductsPage() {
   if (!data) return <div>Loading...</div>;
 
   return (
-    <div>
-      <h1>Products</h1>
-      <ul>
-        {data.map((product) => (
-          <li key={product.id}>
-            <Link href={`/products/${product.id}`}>
-              <a>
-                {product.name} - {product.price} {product.currency}
-              </a>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul>
+      {data.map((product) => (
+        <li key={product.id}>
+          <h2>{product.name}</h2>
+          <p>Description: {product.description} €</p>
+          <p>Price: {product.price}</p>
+          <p>Currency: {product.currency}</p>
+          <p>Category: {product.category}</p>
+          <Link href={`/products/${product.id}`}>Go to Detailspage</Link>
+        </li>
+      ))}
+    </ul>
   );
 }

@@ -20,9 +20,7 @@ export default function ProductDetailPage() {
         Price: {data.price} {data.currency}
       </p>
       <p>Category: {data.category}</p>
-      <Link href="/products">
-        <a>Back to Products</a>
-      </Link>
+      <Link href="/products"></Link>
     </div>
   );
 }
